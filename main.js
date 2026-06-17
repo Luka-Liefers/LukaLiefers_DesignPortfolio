@@ -188,7 +188,7 @@ function playTransitionSound() {
       }
     }
     function startAuto() {
-      if (images.length > 1) timer = setInterval(() => show(idx + 1), 3800);
+      if (images.length > 1) timer = setInterval(() => show(idx + 1), 5000);
     }
     function show(i) {
       idx = (i + images.length) % images.length;
