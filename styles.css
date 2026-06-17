@@ -274,7 +274,7 @@ img { display: block; }
    VISUAL WORKS PAGE — two-column project browser
    ========================================================= */
 .projects-page {
-  min-height: 100vh; width: 100vw;
+  height: 100vh; overflow: hidden; width: 100vw;
   background-color: var(--bg-dark);
   display: grid; grid-template-columns: 1fr 3fr;
   color: #fff; font-family: Montserrat, sans-serif;
@@ -310,7 +310,7 @@ img { display: block; }
   100% { opacity: 1; transform: scale(1); }
 }
 
-.right-section { display: flex; flex-direction: column; overflow-y: auto; }
+.right-section { display: flex; flex-direction: column; overflow-y: auto; min-height: 0; }
 .project-list { display: flex; flex-direction: column; }
 .project-bar {
   width: 100%; background: transparent; border: none;
@@ -441,7 +441,10 @@ img { display: block; }
   .item-details { padding-left: calc(40px + 3rem); padding-right: 2rem; }
 
   /* Visual Works */
-  .projects-page { grid-template-columns: 1fr; grid-template-rows: auto 1fr; }
+  .projects-page {
+    grid-template-columns: 1fr; grid-template-rows: auto 1fr;
+    height: auto; min-height: 100vh; overflow: visible;
+  }
   .left-section { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.2); }
   .image-area { display: none; }
   .project-bar-header { grid-template-columns: 40px 1fr; gap: 1rem; padding: 1.5rem 2rem; }
