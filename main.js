@@ -145,7 +145,7 @@ function playTransitionSound() {
 
   // Each Visuals category folder, with its sequential image count + extension.
   const FOLDERS = {
-    illustration: { dir: "illustration", ext: "png", count: 1 },
+    illustration: { dir: "illustration", ext: "png", count: 3 },
     photography: { dir: "photography", ext: "jpg", count: 31 },
     "3d-modeling": { dir: "3d-modeling", ext: "png", count: 1 },
     branding: { dir: "branding", ext: "png", count: 2 },
